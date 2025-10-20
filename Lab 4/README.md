@@ -187,17 +187,18 @@ Twizzler 6 touched!
 </details>
 
 ### Part B
+https://github.com/user-attachments/assets/3c3e5c75-d598-4537-8072-4c0be10d2507
+
+
+https://github.com/user-attachments/assets/9254c258-0839-4727-a456-7df0e97166d5
+
+
 
 <details>
 <summary><h4><strong>Light/Proximity/Gesture sensor (APDS-9960)</strong></h4></summary>
 	
 ### More sensors
 
-
-https://github.com/user-attachments/assets/3c3e5c75-d598-4537-8072-4c0be10d2507
-
-
-https://github.com/user-attachments/assets/9254c258-0839-4727-a456-7df0e97166d5
 
 
 
@@ -223,6 +224,8 @@ You can go the the [Adafruit GitHub Page](https://github.com/adafruit/Adafruit_C
 </details>
 
 #### Rotary Encoder 
+
+
 <details>
 <summary><h4><strong>Rotary Encoder</strong></h4></summary>
 	
@@ -245,6 +248,11 @@ You can go to the [Adafruit Learn Page](https://learn.adafruit.com/adafruit-i2c-
 </details>
 	
 #### Joystick 
+
+
+https://github.com/user-attachments/assets/d4ffbfd2-e778-4675-8c72-bf28d98290b1
+
+
 <details>
 <summary><h4><strong>Joystick</strong></h4></summary>
 
