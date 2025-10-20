@@ -305,11 +305,68 @@ Usually, sensors need to be positioned in specific locations or orientations to 
 
 
 **\*\*\*Draw 5 sketches of different ways you might use your sensor, and how the larger device needs to be shaped in order to make the sensor useful.\*\*\***
+![5 sketches 1](sketch/5sketches_1.jpg)
 
-**\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\***
+We created six sketches showing different ways sensors can be used and how each device would be physically shaped to make the sensor effective:
 
-**\*\*\*Pick one of these designs to prototype.\*\*\***
+Distance Sensor
 
+Application: Automatic trash bin lid
+Shape: Sensor placed on the lid’s front edge, angled slightly downward to detect an approaching hand or foot
+Purpose: Detect movement within 10–40 cm and trigger the lid to open
+Capacitive Touch Sensor
+
+Application: Interactive “fruit piano”
+Shape: Multiple wires connected to different fruits; each fruit acts as a touch key
+Purpose: Detect human touch through capacitance and trigger a sound or signal
+APDS-9960 Gesture Sensor
+
+Application: Gesture-controlled object (e.g., moving an apple up/down or a banana left/right on a screen)
+Shape: Sensor embedded below the display, with a clear space for hand motion above it
+Purpose: Detect up, down, left, and right hand motions in front of the sensor
+Rotary Encoder
+
+Application: Lamp brightness and color control
+Shape: Knob mounted on a lamp base or panel for easy one-hand use
+Purpose: Rotate to adjust light intensity and press to change color mode
+Joystick
+
+Application: Toy-claw machine controller
+Shape: Joystick embedded on a flat front panel next to a display and coin slot
+Purpose: Move the mechanical arm in different directions
+Later, we added one more concept:
+
+Distance Sensor 2 – Coin Detection
+Application: Detect when a coin is thrown or passes through a slot
+Shape: Sensor mounted behind the coin slot at a fixed distance with a protective cover
+Purpose: Measure changes in distance as the coin approaches or passes to detect a “hit”
+***What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?***
+
+These sketches raised several important questions about sensing performance and usability.
+
+For the distance sensor, we wondered how the angle of installation would affect its accuracy and whether reflection or occlusion could cause false triggers. To answer this, we plan to build a small cardboard lid structure where the sensor angle can be adjusted (0°, 15°, 30°) and test its detection range.
+
+For the capacitive touch sensor, we questioned how the length of the connecting wires and the type of material being touched (for example, different fruits) would influence sensitivity. We will physically test a few materials and measure the delay in signal response.
+
+For the APDS-9960 gesture sensor, we need to know the optimal gesture distance and whether ambient light or background objects could interfere. A small adjustable stand prototype will allow us to test detection at various distances (5–25 cm) under different lighting conditions.
+
+For the rotary encoder, our main concern is whether the knob’s size, texture, and resistance feel comfortable to use and whether the light feedback is visible enough in bright rooms. A simple cardboard base with a mock knob and LED will help test these factors.
+
+For the joystick, we need to evaluate ergonomics — whether the position and angle of the control are comfortable for players and if it can be operated without bumping into other components. We will make a flat control-panel mock-up to test hand reach and movement.
+
+Finally, for the distance sensor used in coin detection, we are uncertain if the sensor can react quickly enough to detect a fast-moving coin, what the ideal mounting distance is (1 cm, 5 cm, 10 cm), and how to protect it from impact. A cardboard prototype of the coin slot with adjustable sensor mounts and a transparent protective cover will allow us to measure detection accuracy and durability.
+
+***Pick one of these designs to prototype.***
+
+We chose the Distance Sensor – Coin Detection design for our prototype.
+
+Reasons:
+
+It is the most interactive and playful idea among the options.
+The distance sensor can directly measure approaching or passing objects and detect a “hit.”
+The structure is simple and easy to prototype with cardboard and a Raspberry Pi.
+It can be extended into a mini-game with lights, sound, and scoring feedback.
+It helps us explore technical challenges like response speed, detection angle, and protection design.
 
 ### Part D
 ### Physical considerations for displaying information and housing parts
@@ -356,7 +413,6 @@ Think about how you want to present the information about what your sensor is se
 
 **\*\*\*Sketch 5 designs for how you would physically position your display and any buttons or knobs needed to interact with it.\*\*\***
 
-![5 sketches 1](sketch/5sketches_1.jpg)
 
 **\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\***
 
