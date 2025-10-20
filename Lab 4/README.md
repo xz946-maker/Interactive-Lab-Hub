@@ -287,7 +287,8 @@ Usually, sensors need to be positioned in specific locations or orientations to 
 
 ### Part D
 ### Physical considerations for displaying information and housing parts
-
+<details>
+<summary><h4><strong>Physical considerations for displaying information and housing parts</strong></h4></summary>
 
 
 Here is a Pi with a paper faceplate on it to turn it into a display interface:
@@ -325,20 +326,57 @@ Here is an example:
 <img src="https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/2020Fall/images/horoscope.png?raw=true"  width="250"/>
 
 Think about how you want to present the information about what your sensor is sensing! Design a paper display for your project that communicates the state of the Pi and a sensor. Ideally you should design it so that you can slide the Pi out to work on the circuit or programming, and then slide it back in and reattach a few wires to be back in operation.
- 
+<details>
+
 **\*\*\*Sketch 5 designs for how you would physically position your display and any buttons or knobs needed to interact with it.\*\*\***
 
 **\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\***
 
+The main questions raised were:
+
+- How can the sensor detect a fast-moving coin accurately?  
+- How far should the sensor be placed from the coin slot for stable readings?  
+- Will reflections or box edges interfere with the distance readings?  
+- How can we mount the sensor safely so it is not hit directly by coins?  
+- How can we slow down the coin without blocking the detection area?
+
+To answer these, we built several quick cardboard mock-ups to test different positions:
+- We first mounted the sensor **directly below the slot**, but it failed to detect the coin because of its speed.  
+- Then we tried moving it **behind the slot**, mounted on a **vertical inner panel**. This reduced interference and improved detection.  
+- Finally, we added a **small internal support board** to slow the coin slightly before it passed the sensor, which made detection consistent.
+
+These physical tests helped us confirm that the **inner vertical mounting** and **support board** were essential for reliable sensing.
 **\*\*\*Pick one of these display designs to integrate into your prototype.\*\*\***
 
+We chose the **sensor-on-inner-panel** design (Design 5).
+
+**Description of the final layout:**
+- A vertical cardboard panel was glued inside the box.  
+- The distance sensor was fixed on this panel, facing the slot on the front side.  
+- A rectangular slot was cut out on the front panel for coins to pass through.  
+- A small board under the slot slows the coin’s motion so the sensor can register it properly.
+
+This layout isolates the sensing area, minimizes outside interference, and provides a clear detection path.
+
 **\*\*\*Explain the rationale for the design.\*\*\*** (e.g. Does it need to be a certain size or form or need to be able to be seen from a certain distance?)
+
+We chose this configuration because it makes the **distance measurement more accurate and consistent**.  
+When the sensor was placed directly under the slot, the coin’s speed caused unstable readings.  
+By moving the sensor to the inner vertical wall, it now detects the coin’s horizontal movement instead of free fall.  
+Adding a small support board slows the coin naturally, improving the timing window for the sensor.  
+This arrangement also keeps the sensor safe from impact and provides space for wiring behind the inner panel.
 
 Build a cardboard prototype of your design.
 
 
 **\*\*\*Document your rough prototype.\*\*\***
 
+**Final design – sensor on vertical inner panel**  
+   - A **vertical inner cardboard wall** is attached inside the box.  
+   - The **distance sensor** is fixed on this wall, facing the **coin slot**.  
+   - The **front panel** has a cut-out coin slot that aligns with the sensor’s line of sight.  
+   - A **small support board** under the slot slows the coin as it falls, improving detection accuracy.  
+   - This setup avoids interference from other parts and ensures stable readings.
 
 # LAB PART 2
 
