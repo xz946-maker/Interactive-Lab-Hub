@@ -391,6 +391,7 @@ Build a cardboard prototype of your design.
 Following exploration and reflection from Part 1, complete the "looks like," "works like" and "acts like" prototypes for your design, reiterated below.
 
 
+![cf3ed569fd16f0044813112cdd794764](https://github.com/user-attachments/assets/5abd6b73-2837-42cb-988e-7485705269e7)
 
 ### Part E
 <details>
@@ -409,30 +410,6 @@ For Part 2, you will design and build a fun interactive prototype using multiple
 - Photos and/or video of the working prototype in action
 - A simple interaction diagram or sketch showing how inputs and outputs are connected and interact
 - Written reflection: What did you learn about multi-input/multi-output interaction? What was fun, surprising, or challenging?
-
-
-![74e2a60b97a7b1bf8f2908546338d9d2](https://github.com/user-attachments/assets/407e87a7-8479-4d59-9a5c-a8cdf9e57295)
-
-
-https://github.com/user-attachments/assets/9b6282a6-f8c0-4d27-8e02-c90c0b3e2148
-
-![cab9ab01673549aee29f815053ace701](https://github.com/user-attachments/assets/bd64617d-ac26-4b89-9ede-e0787ef32932)
-
-
-https://github.com/user-attachments/assets/6f5068fd-71ec-4d09-91fc-44e89b2f645c
-
-
-https://github.com/user-attachments/assets/ccf12e5f-214c-4cc9-b481-1ecdd445a0bb
-
-
-
-https://github.com/user-attachments/assets/f083edef-1dd4-4fd3-b2e8-ba7c482e56eb
-
-
-https://github.com/user-attachments/assets/5dec91ea-5140-42e4-bac7-d1c744a872ff
-
-
-![cf3ed569fd16f0044813112cdd794764](https://github.com/user-attachments/assets/51a3c8a4-4668-4659-b6a9-db488f5e3b29)
 
 
 **Questions to consider:**
