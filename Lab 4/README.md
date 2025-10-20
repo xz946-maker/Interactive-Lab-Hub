@@ -155,6 +155,7 @@ F) [Record the interaction](#part-f)
 </details>
 
 ### Part A
+
 <details>
 <summary><h4><strong>Capacitive Sensing, a.k.a. Human-Twizzler Interaction</strong></h4></summary>
 ### Capacitive Sensing, a.k.a. Human-Twizzler Interaction 
@@ -179,10 +180,19 @@ Twizzler 6 touched!
 </details>
 
 ### Part B
+
 <details>
 <summary><h4><strong>Light/Proximity/Gesture sensor (APDS-9960)</strong></h4></summary>
 	
 ### More sensors
+
+
+https://github.com/user-attachments/assets/3c3e5c75-d598-4537-8072-4c0be10d2507
+
+
+https://github.com/user-attachments/assets/9254c258-0839-4727-a456-7df0e97166d5
+
+
 
 #### Light/Proximity/Gesture sensor (APDS-9960)
 
@@ -394,6 +404,7 @@ Following exploration and reflection from Part 1, complete the "looks like," "wo
 ![cf3ed569fd16f0044813112cdd794764](https://github.com/user-attachments/assets/5abd6b73-2837-42cb-988e-7485705269e7)
 
 ### Part E
+You can view the test script here: [Lab 4/test.py](Lab%204/test.py)
 <details>
 <summary><h4><strong>Part E</strong></h4></summary>
 	
