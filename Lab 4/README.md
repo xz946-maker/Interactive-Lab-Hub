@@ -155,11 +155,6 @@ F) [Record the interaction](#part-f)
 </details>
 
 ### Part A
-
-<details>
-<summary><h4><strong>Capacitive Sensing, a.k.a. Human-Twizzler Interaction</strong></h4></summary>
-	
-### Capacitive Sensing, a.k.a. Human-Twizzler Interaction 
 ![IMG_0618](https://github.com/user-attachments/assets/9841a78e-5a10-463d-861e-66ceb19bc8f0)
 <img width="596" height="428" alt="Screenshot 2025-10-12 at 22 13 37" src="https://github.com/user-attachments/assets/0fd47c86-047a-4970-943d-64e9bcdfb00e" />
 
@@ -167,6 +162,10 @@ F) [Record the interaction](#part-f)
 
 https://github.com/user-attachments/assets/5de6cb62-67d4-4b79-b352-aaf7255ee02f
 
+<details>
+<summary><h4><strong>Capacitive Sensing, a.k.a. Human-Twizzler Interaction</strong></h4></summary>
+	
+### Capacitive Sensing, a.k.a. Human-Twizzler Interaction 
 
 We want to introduce you to the [capacitive sensor](https://learn.adafruit.com/adafruit-mpr121-gator) in your kit. It's one of the most flexible input devices we are able to provide. At boot, it measures the capacitance on each of the 12 contacts. Whenever that capacitance changes, it considers it a user touch. You can attach any conductive material. In your kit, you have copper tape that will work well, but don't limit yourself! In the example below, we use Twizzlers--you should pick your own objects.
 
