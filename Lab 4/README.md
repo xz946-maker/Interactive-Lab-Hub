@@ -226,6 +226,10 @@ You can go the the [Adafruit GitHub Page](https://github.com/adafruit/Adafruit_C
 #### Rotary Encoder 
 
 
+
+https://github.com/user-attachments/assets/799da4d4-086e-4c91-b2e6-3ee34d09a3fe
+
+
 <details>
 <summary><h4><strong>Rotary Encoder</strong></h4></summary>
 	
