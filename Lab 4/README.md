@@ -194,6 +194,10 @@ https://github.com/user-attachments/assets/9254c258-0839-4727-a456-7df0e97166d5
 
 
 
+
+https://github.com/user-attachments/assets/938881d0-fcf6-4652-88f0-942a06f305c6
+
+
 <details>
 <summary><h4><strong>Light/Proximity/Gesture sensor (APDS-9960)</strong></h4></summary>
 	
