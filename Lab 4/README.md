@@ -376,6 +376,12 @@ The structure is simple and easy to prototype with cardboard and a Raspberry Pi.
 It can be extended into a mini-game with lights, sound, and scoring feedback.
 It helps us explore technical challenges like response speed, detection angle, and protection design.
 
+
+
+https://github.com/user-attachments/assets/7ff974b0-02db-48db-b979-1b69fc8428e7
+
+
+
 ### Part D
 ### Physical considerations for displaying information and housing parts
 <details>
@@ -463,6 +469,18 @@ Build a cardboard prototype of your design.
 
 
 **\*\*\*Document your rough prototype.\*\*\***
+
+
+https://github.com/user-attachments/assets/2645784b-deb3-4e12-8d92-d5d5f476cca4
+
+
+https://github.com/user-attachments/assets/a6c92de7-4946-48d0-98b4-a9b3941e5779
+
+
+
+https://github.com/user-attachments/assets/92a629a7-f1bb-48cd-bbdc-3f3e0345ae98
+
+
 
 **Final design – sensor on vertical inner panel**  
    - A **vertical inner cardboard wall** is attached inside the box.  
