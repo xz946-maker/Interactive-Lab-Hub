@@ -413,6 +413,7 @@ Think about how you want to present the information about what your sensor is se
 
 **\*\*\*Sketch 5 designs for how you would physically position your display and any buttons or knobs needed to interact with it.\*\*\***
 
+![f669d248eb0c9d3f62ad20b7c70c8940](https://github.com/user-attachments/assets/9fd3c4a8-8820-4362-b9bc-e5dcb8fbbd46)
 
 **\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\***
 
@@ -817,4 +818,8 @@ https://github.com/user-attachments/assets/1ee6afb1-2767-4c0c-9031-6440b84e4638
 
 
 https://github.com/user-attachments/assets/8fcaa9ec-d6e0-4fb7-8cb2-36a57de4ba01
+
+
+
+https://github.com/user-attachments/assets/275131b4-103a-4f6e-8ead-d181be82ac3f
 
