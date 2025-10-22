@@ -464,6 +464,7 @@ Build a cardboard prototype of your design.
    - This setup avoids interference from other parts and ensures stable readings.
 
 
+![cf3ed569fd16f0044813112cdd794764](https://github.com/user-attachments/assets/f2631421-fca0-460f-bbcc-90c752b1a2d0)
 
 
 # LAB PART 2
@@ -799,6 +800,10 @@ Document all the prototypes and iterations you have designed and worked on! Agai
 ![74e2a60b97a7b1bf8f2908546338d9d2](https://github.com/user-attachments/assets/3812dc49-37e1-4295-9935-0fd849d08a64)
 
 ![cab9ab01673549aee29f815053ace701](https://github.com/user-attachments/assets/c2a4d510-7b4f-4685-8186-28d74984e7b8)
+
+
+
+https://github.com/user-attachments/assets/6f3b0a93-68ed-457b-981a-b1669704cd7e
 
 
 https://github.com/user-attachments/assets/d4c18e7b-8a17-4924-b151-d7df1cb5b4cf
