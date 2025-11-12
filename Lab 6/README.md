@@ -136,7 +136,9 @@ https://github.com/user-attachments/assets/d628ca74-17f0-46ca-a328-68110f77c02f
 ---
 
 ## Part C: Make Your Own
-
+<details>
+<summary>Click to expand</summary>
+ 
 **Requirements:**
 - 3+ people, 3+ Pis
 - Each Pi contributes sensor input via MQTT
@@ -161,7 +163,7 @@ https://github.com/user-attachments/assets/d628ca74-17f0-46ca-a328-68110f77c02f
 ### Deliverables
 
 Replace this README with your documentation:
-
+</details>
 **1. Project Description**
 ### What does it do?
 
