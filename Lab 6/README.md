@@ -159,7 +159,41 @@ https://github.com/user-attachments/assets/d628ca74-17f0-46ca-a328-68110f77c02f
 Replace this README with your documentation:
 
 **1. Project Description**
-- What does it do? Why interesting? User experience?
+### What does it do?
+
+The Distributed Goose Counting Game is a collaborative counting challenge where multiple players use Raspberry Pi devices with physical buttons to compete in counting geese from an image. The system creates an engaging, real-time competitive experience using distributed hardware and networked communication.
+
+**Game Flow:**
+1. An image of geese is displayed for 5 seconds
+2. After the image disappears, players wait through a 5-second countdown
+3. When the countdown ends, players have 5 seconds to answer
+4. Players press their button once for each goose they counted
+5. After 5 seconds, the system automatically calculates each player's answer based on their total button presses
+6. The first player with the correct answer wins
+
+### Why is it interesting?
+
+This project demonstrates distributed sensing and real-time collaboration in several ways:
+
+**Real-time Feedback:** After the 5-second answer period, all players' answers are revealed simultaneously on the web interface, creating anticipation and excitement.
+
+**Physical-Digital Bridge:** The game combines physical button pressing with digital visualization, making abstract networked systems tangible and fun.
+
+**Collaborative Competition:** While players compete individually, the system only works when multiple people participate together, demonstrating the power of networked devices.
+
+### User Experience
+
+Players experience the game in three phases:
+
+**Observation Phase:** Tension builds as players quickly count geese while the image is visible. The time pressure creates urgency.
+
+**Waiting Phase:** The countdown creates anticipation. Players must remember their count while watching the timer.
+
+**Action Phase:** Players frantically press buttons to enter their count within the 5-second window. They cannot see other players' progress during this time, adding tension. When time expires, all answers are revealed simultaneously, creating a dramatic moment of truth.
+
+The physical button creates a more engaging experience than keyboard input - each press feels meaningful and the pressure of the ticking clock creates urgency.
+
+---
 
 **2. Architecture Diagram**
 - Hardware, connections, data flow
@@ -176,6 +210,33 @@ Replace this README with your documentation:
 - What did they think before trying?
 - What surprised them?
 - What would they change?
+
+We tested our **Bird Counting Game** with **three players who were not on our team**. Each participant used a Raspberry Pi with a physical button and LED, and all shared the same web interface displayed on a laptop screen.
+
+Before Trying
+
+Before playing, participants expected the game to be simple—just pressing a button when prompted. They didn’t realize it would require both **memorizing the number of birds** and **reacting precisely after the countdown**, so they thought it might just test reaction speed.
+
+What Surprised Them
+
+They were surprised by how challenging the game felt. The first version only displayed the bird image for **3 seconds**, which made it difficult to finish counting. After we extended the display to **5 seconds**, players said it finally felt fair while still exciting.
+They also mentioned that the **five-second countdown** built strong anticipation—the moment when “Go!” appeared created real tension, and they instinctively tried to react as fast as possible.
+
+What They Would Change
+
+Participants suggested:
+
+* Adding **sound cues** (for example, a short beep each second during the countdown and a chirp sound on “Go!”).
+* Showing a **visual leaderboard** that tracks each player’s fastest reaction time and number of correct rounds.
+* Adding a quick replay or “next round” animation to make transitions smoother.
+
+### 🎥 Photos / Video
+
+We recorded a short clip (`output_small.mp4`) and took photos of the players during testing, showing the interface, button presses, and LED feedback across multiple Pis.
+
+---
+
+是否希望我帮你再写一版简短版（像课堂示例那样 4-5 行）以备 README 排版更紧凑？
 
 **5. Reflection**
 - What worked well?
