@@ -23,7 +23,9 @@ Build interactive systems where **multiple devices communicate over a network** 
 ---
 
 ## Part A: MQTT Messaging
-
+<details>
+<summary>Click to expand</summary>
+ 
 MQTT = lightweight messaging for IoT. Publish/subscribe model with central broker.
 
 **Concepts:**
@@ -58,12 +60,14 @@ mosquitto_pub -h farlab.infosci.cornell.edu -p 1883 -t 'IDD/test/yourname' -m 'H
 ![MQTT Explorer showing messages](imgs/MQTT-explorer.png)
 
 **💡 Brainstorm 5 ideas for messaging between devices**
-
+</details>
 ---
 
 ## Part B: Collaborative Pixel Grid
+<details>
+<summary>Click to expand</summary>
 
-Each Pi = one pixel, controlled by RGB sensor, displayed in real-time grid.
+ Each Pi = one pixel, controlled by RGB sensor, displayed in real-time grid.
 
 **Architecture:** `Pi (sensor) → MQTT → Server → Web Browser`
 
@@ -127,7 +131,7 @@ Hold colored objects near sensor to change your pixel!
 
 
 https://github.com/user-attachments/assets/d628ca74-17f0-46ca-a328-68110f77c02f
-
+</details>
 
 ---
 
