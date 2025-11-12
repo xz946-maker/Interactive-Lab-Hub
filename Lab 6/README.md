@@ -136,35 +136,6 @@ https://github.com/user-attachments/assets/d628ca74-17f0-46ca-a328-68110f77c02f
 ---
 
 ## Part C: Make Your Own
-<details>
-<summary>Click to expand</summary>
- 
-**Requirements:**
-- 3+ people, 3+ Pis
-- Each Pi contributes sensor input via MQTT
-- Meaningful or fun interaction
-
-**Ideas:**
-
-**Sensor Fortune Teller**
-- Each Pi sends 0-255 from different sensor
-- Server generates fortunes from combined values
-
-**Frankenstories**
-- Sensor events → story elements (not text!)
-- Red = danger, gesture up = climbed, distance <10cm = suddenly
-
-**Distributed Instrument**
-- Each Pi = one musical parameter
-- Only works together
-
-**Others:** Games, presence display, mood ring
-
-### Deliverables
-
-Replace this README with your documentation:
-</details>
-# Distributed Goose Counting Game
 
 ## Project Description
 
@@ -534,102 +505,32 @@ python button_client.py
 
 ## User Testing
 
-### Test Session 1: Initial Gameplay
+**What happened:**  
+All participants counted the objects shown on the screen and pressed their buttons to submit answers.  
+- Participant 1 pressed 14 times(around 4+s).  
+- Participant 2 pressed 14 times and finished faster (around 3.9s). 
+- Participant 3 pressed 13 times and hesitated near the end.  
+- Participant 2’s answer was correct and faster, Winner.
 
-**Participants:** Alex and Jordan
+**What surprised them:**  
+- **Participant 2:** “Not knowing the other player’s progress made it intense.”  
+- **Participant 3:** “It was easy to lose count under pressure.”  
 
-**Setup:**
-- 2 Raspberry Pis with buttons
-- Laptop showing game on projector
-- Participants given no instructions initially
+**What they would change:**  
+- **Participant 2:** Suggested adding a short practice round first.  
+- **Participant 3:** Suggested showing a small indicator light to confirm each button press.
 
-**What happened:**
+### Testing 1
 
-**Round 1 (Learning):**
-- Read the instruction carefully but still don't know when to press the button
-- Countdown started - confusion about what to do
-- Jordan pressed button randomly during countdown
-- Game timed out
+https://github.com/user-attachments/assets/7646f039-6b00-4ae2-8e54-1c73d6dce203
 
-**Round 2 (With Instructions):**
-- Both counted more carefully during image display
-- Alex pressed exactly 14 times over the 5-second period
-- Jordan pressed 13 times, then one more, finishing at 4.7s
-- Alex won with correct answer (14) and faster completion time (last press at 3.8s)
+### User Testing 1
 
-**What surprised them:**
+https://github.com/user-attachments/assets/aa9c5ec4-bc55-48c8-9350-8526f325dfd6
 
-**Alex:**
-- "Not knowing if I'm ahead or behind made it nerve-wracking"
-- "The reveal at the end was dramatic - like waiting for test results"
+### User Testing 2
 
-**Jordan:**
-- "I kept second-guessing - did I press 13 or 14 times?"
-- "No way to change my answer once I pressed - had to commit"
-- "The physical button makes counting feel more real than keyboard"
-
-**What they would change:**
-
-**Alex's suggestions:**
-- Show one image example very briefly at the start of answering phase
-- Maybe a practice round first?
-- It's more like a switch game.
-
-**Jordan's suggestions:**
-- Different difficulty levels with more/fewer geese
-
-### Test Session 2: Multi-Player Competition
-
-**Participants:** 3 users (Sam, Casey, Xueer)
-
-**Setup:**
-- Each person with their own Pi and button
-- Game displayed on TV
-- Competitive atmosphere
-
-**What happened:**
-
-**Round 1:**
-- All three counted during image display
-- Visible tension during countdown - Sam was fidgeting
-- Casey started clicking immediately when answer phase began
-- Sam clicked methodically - 1, pause, 2, pause, etc.
-- Riley clicked quickly then stopped to think
-- Sam submitted first at 3.8s with 14 (CORRECT - WINNER)
-- Casey submitted at 4.2s with 16 (incorrect)
-- Riley didn't submit in time
-
-**Round 2:**
-- More strategic - everyone counted more carefully
-- Riley won this time with 14 at 2.9s
-- Sam had 13 (one short)
-- Casey had 14 but slower at 4.5s
-
-**What surprised them:**
-
-**Sam:**
-- "The reveal at the end was exciting - everyone's answer showed at once"
-
-**Casey:**
-- "I didn't realize speed mattered if you're wrong"
-- "Not seeing others made me focus on my own count"
-- "The 5-second limit feels short but is actually enough"
-
-**Riley:**
-- "I liked that it's not pure speed - accuracy matters more"
-- "The waiting period after the image is genius - forces memory"
-- "Network lag wasn't noticeable, felt instant"
-
-**What they would change:**
-
-**Sam's suggestions:**
-- Best of 5 rounds tournament mode
-
-**Casey's suggestions:**
-- Visual feedback on your own Pi (LED?)
-
-**Riley's suggestions:**
-- Different animals, not just geese
+https://github.com/user-attachments/assets/660b6aed-262f-4fb2-8c41-6d66e4e6a725
 
 
 ### Testing Insights
@@ -672,8 +573,7 @@ python button_client.py
 The MQTT-based architecture proved robust and scalable. Adding new Pis was simple - just run the client script. The pub/sub model meant players didn't need to know about each other directly, making the system flexible.
 
 **Technical Success:**
-- Zero message loss during testing
-- Latency consistently under 100ms
+- No message loss during testing
 - Handled 3 concurrent players easily
 - Could scale to 10+ with no code changes
 
@@ -685,15 +585,12 @@ Socket.IO enabled synchronized result display across all clients. After the 5-se
 - Hidden progress increased tension and focus
 - Simultaneous reveal created excitement
 - Synchronized countdown across all clients
-- Immediate winner announcement after reveal
-- No perceptible lag in final display
 
 **3. Physical Button Interaction**
 
 Using real I2C buttons instead of keyboard/mouse input made the experience significantly more engaging. The tactile feedback and the need to count accurately while pressing created meaningful physical interaction.
 
 **Engagement Success:**
-- Users preferred button over keyboard
 - Each press felt tangible and meaningful
 - Debouncing prevented false triggers
 - Button state detection was reliable
@@ -732,7 +629,7 @@ The multi-phase structure (view → wait → answer) created good pacing and cha
 
 **Issue Encountered:**
 - If Pi disconnected and reconnected, it got a new player number
-- MAC address was reliable but not user-friendly for display
+- IP address was reliable but not user-friendly for display
 - No way to assign human-readable names from Pi side
 
 **Solution:**
@@ -750,11 +647,10 @@ The multi-phase structure (view → wait → answer) created good pacing and cha
 
 **Event Detection:**
 
-The I2C button sensor reports state changes reliably. Reading the button at 50ms intervals (20Hz) was sufficient to catch all human presses while keeping CPU usage low.
+The I2C button sensor reports state changes reliably. 
 
 **What Worked:**
 - Simple state machine (pressed/released) was enough
-- Debouncing at 300ms eliminated all false triggers
 - Hold detection by timing between press and release was intuitive
 
 **What Was Tricky:**
@@ -814,9 +710,9 @@ def indicate_press():
 **2. Game Variations**
 
 **Difficulty Levels:**
-- Easy: 5-7 geese, 7 seconds to answer
+- Easy: 5-7 geese, 3 seconds to answer
 - Medium: 10-15 geese, 5 seconds (current)
-- Hard: 20+ geese, 3 seconds
+- Hard: 20+ geese, 7 seconds
 
 **Multiple Rounds:**
 Track scores across multiple rounds, crown overall winner.
@@ -825,66 +721,6 @@ Track scores across multiple rounds, crown overall winner.
 ### Lessons Learned
 
 From a game design perspective, the project demonstrated how simple mechanics can generate emergent complexity. The basic interaction - pressing a button to count - became strategically rich through the addition of time pressure and memory challenges. 
----
-
-## Code Files
-
-**Server files:**
-- `app.py` - Pixel grid server (Flask + WebSocket + MQTT)
-- `mqtt_viewer.py` - MQTT message viewer for debugging
-- `mqtt_bridge.py` - MQTT → WebSocket bridge
-- `requirements-server.txt` - Server dependencies
-
-**Pi files:**
-- `pixel_grid_publisher.py` - Example (RGB sensor → MQTT)
-- `requirements-pi.txt` - Pi dependencies
-
-**Web interface:**
-- `templates/grid.html` - Pixel grid display
-- `templates/controller.html` - Color picker
-- `templates/mqtt_viewer.html` - Message viewer
-
----
-
-## Debugging Tools
-
-**MQTT Message Viewer:** `http://farlab.infosci.cornell.edu:5001`
-- See all MQTT messages in real-time
-- View topics and payloads
-- Helpful for debugging your own projects
-
-**Command line:**
-```bash
-# See all IDD messages
-mosquitto_sub -h farlab.infosci.cornell.edu -p 1883 -t "IDD/#" -u idd -P "device@theFarm"
-```
-
----
-
-## Troubleshooting
-
-**MQTT:** Broker `farlab.infosci.cornell.edu:1883`, user `idd`, pass `device@theFarm`
-
-**Sensor:** Check `i2cdetect -y 1`, APDS-9960 at `0x39`
-
-**Grid:** Verify server running, check MQTT in console, test with web controller
-
-**Pi venv:** Make sure to activate: `source .venv/bin/activate`
-
-
----
-
-## Submission Checklist
-
-Before submitting:
-- [ ] Delete prep/instructions above
-- [ ] Add YOUR project documentation
-- [ ] Include photos/videos/diagrams  
-- [ ] Document user testing with non-team members
-- [ ] Add reflection on learnings
-- [ ] List team names at top
-
-**Your README = story of what YOU built!**
 
 ---
 
