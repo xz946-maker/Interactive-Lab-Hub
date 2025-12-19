@@ -68,7 +68,8 @@ The WhattoDo Box reacts to a coin insertion and guides users through a step-by-s
 If the full system failed, we planned several fallback options. First, we could change from dual card dispenser to single card dispenser. If that didn't work, we could replace the card dispenser with a random object dropping machine. As a last option, we could convert the physical system into a screen-only digital version. Each fallback preserves the core idea of randomized decision-making.
 
 ## 🧱 Physical Design Evolution
-![WTDB_Diagram](https://github.com/user-attachments/assets/56878b4f-59af-4f47-8d07-ca42ca79b9a4)
+![WTDB_Diagram](https://github.com/user-attachments/assets/54a01a57-c021-40b6-bfbd-9596b37c9096)
+
 
 ### From Cardboard to Laser-Cut Wood
 
